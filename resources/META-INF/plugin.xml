@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.cyrivlclth.go.plugins</id>
+  <name>Coding for Goland</name>
+  <version>1.0</version>
+  <vendor email="cyrivlclth@live.com" url="https://github.com/CyrivlClth">CyrivlClth</vendor>
+
+  <description><![CDATA[
+      Coding for Goland<br>
+      <em>Contains some goland plugins</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      release 1.0.0<br>
+      <em>code generator</em>
+      <em>create a new project from templates</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.go</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="com.cyrivlclth.goplugins.demo" class="com.cyrivlclth.goplugins.demo.DemoAction" text="DemoAction" description="com.cyrivlclth.goplugins.demo.DemoAction">
+          <add-to-group group-id="GenerateGroup" anchor="first"/>
+      </action>
+  </actions>
+
+</idea-plugin>
